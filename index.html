@@ -11,6 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
 
@@ -18,19 +24,24 @@
   </head>
   <body>
     <main>
-      <div>
-        <h1>Learn to code by watching others</h1>
+      <div class="introduction">
+        <h1>
+          Learn to code by <br />
+          watching others
+        </h1>
         <p>
-          See how experienced developers solve problems in real-time. Watching
-          scripted tutorials is great, but understanding how developers think is
-          invaluable.
+          See how experienced developers solve problems in real-time. <br />
+          Watching scripted tutorials is great, but understanding how <br />
+          developers think is invaluable.
         </p>
       </div>
       <article>
-        <button>Try it free 7 days then $20/mo. thereafter</button>
-        <form>
+        <button>
+          <span class="buy">Try it free 7 days</span> then $20/mo. thereafter
+        </button>
+        <form id="form">
           <div>
-            <input name="firstname" placeholder="First Name" />
+            <input id="firstName" name="firstname" placeholder="First Name" />
             <div class="error">
               <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fill-rule="evenodd">
@@ -39,11 +50,11 @@
                   <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
                 </g>
               </svg>
-              <p>can't be empty</p>
+              <p>First name can't be empty</p>
             </div>
           </div>
           <div>
-            <input name="lastname" placeholder="Last Name" />
+            <input id="lastname" name="lastname" placeholder="Last Name" />
             <div class="error">
               <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fill-rule="evenodd">
@@ -52,11 +63,11 @@
                   <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
                 </g>
               </svg>
-              <p>can't be empty</p>
+              <p>Last name can't be empty</p>
             </div>
           </div>
           <div>
-            <input name="email" placeholder="Email Address" />
+            <input id="email" name="email" placeholder="Email Address" />
             <div class="error">
               <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fill-rule="evenodd">
@@ -69,7 +80,7 @@
             </div>
           </div>
           <div>
-            <input name="password" placeholder="Password" />
+            <input id="password" name="password" placeholder="Password" />
             <div class="error">
               <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fill-rule="evenodd">
@@ -78,14 +89,16 @@
                   <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
                 </g>
               </svg>
-              <p>can't be empty</p>
+              <p>Password can't be empty</p>
             </div>
           </div>
-          <button>Claim your free trial</button>
-          <p>
-            By clicking the button, you are agreeing to our
-            <span>Terms and Services</span>
-          </p>
+          <div class="grid-group">
+            <button>Claim your free trial</button>
+            <p>
+              By clicking the button, you are agreeing to our
+              <span>Terms and Services</span>
+            </p>
+          </div>
         </form>
       </article>
     </main>
