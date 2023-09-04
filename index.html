@@ -29,10 +29,22 @@
       <article>
         <button>Try it free 7 days then $20/mo. thereafter</button>
         <form>
-          <input name="firstname" placeholder="First Name" />
-          <input name="lastname" placeholder="Last Name" />
-          <input name="email" placeholder="Email Address" />
-          <input name="password" placeholder="Password" />
+          <div>
+            <input name="firstname" placeholder="First Name" />
+            <p>can't be empty</p>
+          </div>
+          <div>
+            <input name="lastname" placeholder="Last Name" />
+            <p>can't be empty</p>
+          </div>
+          <div>
+            <input name="email" placeholder="Email Address" />
+            <p>Looks like this is not an email</p>
+          </div>
+          <div>
+            <input name="password" placeholder="Password" />
+            <p>can't be empty</p>
+          </div>
           <button>Claim your free trial</button>
           <p>
             By clicking the button, you are agreeing to our
@@ -41,5 +53,6 @@
         </form>
       </article>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
